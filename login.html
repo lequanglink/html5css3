@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="img/logoshop.png">
+    <link rel="stylesheet" href="home.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+<header>
+  <div class="menu-logo">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logoshop.png" alt=""width="50px" />
+        </a>
+      </div>
+      <nav>
+          <a href="index.html">TRANG CHỦ</a>
+          <a href="">GIỚI THIỆU</a>
+          <a href="sanpham.html">SẢN PHẨM</a>
+          <a href="">TIN TỨC</a>
+          <a href="">LIÊN HỆ</a>
+      </nav> 
+      <div class="icon-header">
+          <i class='bx bxs-cart' style='color:#ffffff'></i>
+          <i class='bx bx-search'style='color:#ffffff'></i>
+          <a href="login.html">
+          <i class='bx bxs-user' style='color:#ffffff'  ></i>
+          </a>
+      </div>
+  </div>
+  <div class="menu-logo-mobile">
+      <div class="menu-left">
+          <div class="logo">
+              <img src="img/logoshop.png" alt=""width="55px" />
+          </div>
+      </div>
+     <div class="menu-right">
+         <div id="menu-mo">
+             <i class="ti-menu"></i>
+          </div>
+         <div id="menu-dong">
+             <i class="ti-close"></i>
+         </div>
+     </div>
+  </div>
+  <div id="nav-menu-mobile">
+      <ul>
+          <li><a href="index.html">TRANG CHỦ</a></li>
+          <li><a href="">GIỚI THIỆU</a></li>
+          <li><a href="sanpham.html">SẢN PHẨM</a></li>
+          <li><a href="">TIN TỨC</a></li>
+          <li><a href="">LIÊN HỆ</a></li>
+      </ul>
+  </div>
+</header>
+    <div class="container">
+      <div class="imgcontainer">
+        <img src="img/logoshop.png" alt="Avatar" class="avatar">
+      </div>
+      <h2>Đăng Nhập:</h2>
+      <br>
+      <br>
+        <form onsubmit="return checklogin()" name="flogin" method="post" action="xulylogin.php">
+            Tài Khoản:<br /> <input name="u" id="u" type="text" /> <br />
+            Mật Khẩu:<br /> <input name="p" id="p" type="password" /> <br />
+            <input type="submit" name="sub" id="sub" value="Đăng Nhập" />
+            <label>
+              <input id="remmember" name="remember" type="checkbox" checked="checked">Lưu Tài Khoản
+            </label>
+            <div class="container2" style="background-color:#f1f1f1">
+              <span class="psw">Nếu chưa có tài khoản đăng kí <a href="signup.html">Tại đây ?</a></span>
+            </div>
+        </form>
+    </div>
+    <script>
+        function checklogin() {
+            if (document.flogin.u.value == '') {
+                alert("Bạn chưa nhập Tài Khoản");
+                document.flogin.u.focus(); //Chọn đối tượng u
+                return false;   // Chặn form không cho submit
+            }
+            if (document.flogin.p.value == '') {
+                alert("Bạn chưa nhập Mật Khẩu");
+                document.flogin.p.focus();	//Chọn đối tượng p
+                return false;
+            }
+            if(document.flogin.u.value  != '' && document.flogin.p.value != '')
+    {
+        window.location = "index.html";
+    }
+
+        }
+
+    </script>
+</body>
+
+</html>

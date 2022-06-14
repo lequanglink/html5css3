@@ -1,0 +1,84 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.container{
+    border-radius:10px ;
+    padding: 50px;
+    max-width: 457px;
+    margin: 6% auto;
+    border: 3px solid #f1f1f1;
+
+}
+.container form{
+    border: 3px solid #f1f1f1;
+}
+form input, #tukhoa{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+form input:hover, #tukhoa{
+    transition: .2s;
+    color: red;
+}
+form #btntim{
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 160px;
+    width: 56px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    padding: 2px;
+}
+form #btntim:hover{
+    background: gray;
+    color: aqua;
+}
+#sub{
+    color: white;
+    width: 100%;
+    background: rgb(97, 97, 204);
+}
+#sub:hover{
+    opacity: 0.8;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  button {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+#remmember{
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  a:hover {
+    color: red;
+  }

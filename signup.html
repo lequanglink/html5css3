@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="sanpham.css">
+    <link rel="icon" href="img/logoshop.png">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.container{
+    border-radius:10px ;
+    padding: 50px;
+    max-width: 457px;
+    margin: 6% auto;
+    border: 3px solid #f1f1f1;
+
+}
+.container form{
+    border: 3px solid #f1f1f1;
+}
+form input, #tukhoa{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+form input:hover, #tukhoa{
+    transition: .2s;
+    color: red;
+}
+form #btntim{
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 160px;
+    width: 56px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    padding: 2px;
+}
+form #btntim:hover{
+    background: gray;
+    color: aqua;
+}
+#sub{
+    color: white;
+    width: 100%;
+    background: rgb(97, 97, 204);
+}
+#sub:hover{
+    opacity: 0.8;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  button {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+#remmember{
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  a:hover {
+    color: red;
+  }
+</style>
+<body>
+    <header>
+        <div class="menu-logo">
+            <div class="logo">
+              <a href="index.html">
+                <img src="img/logoshop.png" alt=""width="50px" />
+              </a>
+            </div>
+            <nav>
+                <a href="index.html">TRANG CHỦ</a>
+                <a href="">GIỚI THIỆU</a>
+                <a href="sanpham.html">SẢN PHẨM</a>
+                <a href="">TIN TỨC</a>
+                <a href="">LIÊN HỆ</a>
+            </nav> 
+            <div class="icon-header">
+                <i class='bx bxs-cart' style='color:#ffffff'></i>
+                <i class='bx bx-search'style='color:#ffffff'></i>
+                <a href="login.html">
+                <i class='bx bxs-user' style='color:#ffffff'  ></i>
+                </a>
+            </div>
+        </div>
+        <div class="menu-logo-mobile">
+            <div class="menu-left">
+                <div class="logo">
+                    <img src="img/logoshop.png" alt=""width="55px" />
+                </div>
+            </div>
+           <div class="menu-right">
+               <div id="menu-mo">
+                   <i class="ti-menu"></i>
+                </div>
+               <div id="menu-dong">
+                   <i class="ti-close"></i>
+               </div>
+           </div>
+        </div>
+        <div id="nav-menu-mobile">
+            <ul>
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="">GIỚI THIỆU</a></li>
+                <li><a href="sanpham.html">SẢN PHẨM</a></li>
+                <li><a href="">TIN TỨC</a></li>
+                <li><a href="">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+      </header>
+<form action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <div class="imgcontainer">
+        <img src="img/logoshop.png" alt="Avatar" class="avatar">
+      </div>
+    <h1>Đăng Kí:</h1>
+    <p>Vui lòng điền vào biểu mẫu này để tạo tài khoản.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Mật khẩu</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    
+    
+    <p>Bằng cách tạo một tài khoản, bạn đồng ý với <a href="#" style="color:dodgerblue">Điều khoản & quyên riêng tư</a> của chúng tôi.</p>
+
+    <div class="clearfix">
+        <input type="submit" name="sub" id="sub" value="Sign up" /></button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
